@@ -1,0 +1,57 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400; 0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400 ..700;1.400..700&family=Playfair+Display:ital,wght@0,400..900;1.400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5 ..1200.300..900&display=trocar');
+/* variavel para cores */
+:root{
+    --fundo-menu-lateral: #752274;
+    --fundo-claro: #ba64b6;
+    --fundo-claro2: #f0a5ec;
+
+    --borda-clara: #a953a5;
+    --borda-escura: #863284;
+
+    --texto-escuro: #161616;
+    --texto-claro: #c8d4db;
+    --texto-hover: #b717b4;
+
+    --detalhes-claros:#974395;
+    --detalhes-escuros:#451644;
+}
+/* Mobile Menu */
+
+/* CSS Principal */
+body{
+    font-family: "cormorant-garamond-light-italic" ,;
+    color: var();
+    background:var();
+}
+a{
+    color:var();
+    text-decoration:none ;
+}
+a:hover {
+    color: var();
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: ;
+}
+/* cabeçalho */
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: var(--fundo-menu-lateral);
+    transition: all ease-in-out 0.5s;
+    padding: 0 15px;
+    z-index: 99999 ;
+    overflow-y: auto ;
+}
+.perfil img{
+    margin: 35px;
+    display: block;
+    width: 190px;
+    border: 5px solid var(--detalhes-claros);
+    box-shadow: 0px 0px 15px 5px rgb(78, 47, 66);
+    color: #999999 ;
+}
