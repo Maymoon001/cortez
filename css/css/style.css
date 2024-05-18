@@ -1,14 +1,14 @@
- @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400; 0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400 ..700;1.400..700&family=Playfair+Display:ital,wght@0,400..900;1.400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5 ..1200.300..900&display=trocar');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 /* variavel para cores */
 :root{
     --fundo-menu-lateral: #752274;
     --fundo-claro: #ba64b6;
-    --fundo-claro2: #f0a5ec;
+    --fundo-claro2: #d21dc9;
 
     --borda-clara: #a953a5;
     --borda-escura: #863284;
 
-    --texto-escuro: #161616;
+    --texto-escuro: #6b0a66;
     --texto-claro: #c8d4db;
     --texto-hover: #b717b4;
 
@@ -18,40 +18,135 @@
 /* Mobile Menu */
 
 /* CSS Principal */
-body{
-    font-family: "cormorant-garamond-light-italic" ,;
-    color: var();
-    background:var();
+body {
+    font-family: "playfair" sans-serif;
+    color: var(--texto-escuro);
+    background: var(--fundo-claro);
 }
 a{
-    color:var();
-    text-decoration:none ;
+    color: var(--texto-escuro);
+    text-decoration: none;
 }
 a:hover {
-    color: var();
+    color: var(--texto-hover);
     text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: ;
+    font-family: 'Times New Roman', Times, serif;
 }
 /* cabeçalho */
-#header{
+#header {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     width: 300px;
-    background: var(--fundo-menu-lateral);
+    background-color: var(--fundo-menu-lateral);
     transition: all ease-in-out 0.5s;
+    z-index: 99999; 
     padding: 0 15px;
-    z-index: 99999 ;
-    overflow-y: auto ;
+    overflow-y: auto;
 }
 .perfil img{
-    margin: 35px;
+    margin: 35px auto;
     display: block;
-    width: 190px;
-    border: 5px solid var(--detalhes-claros);
-    box-shadow: 0px 0px 15px 5px rgb(78, 47, 66);
-    color: #999999 ;
+    width: 120px;
+    border: 2px solid var(--detalhes-claros);
+    box-shadow: 0px 0px 15px 5px rgb(186, 109, 156);
+    color: #f4eaea ;
+}
+.perfil h1 {
+    font-size:24px ;
+    margin: 0 ;
+    padding: 0;
+    font-weight:600;
+    text-align: center ;
+    font-family:"Merriweather" sans-serif;
+}
+.perfil .social-links a {
+    font-size: 20px;
+    display: inline-block;
+    background: var(--texto-escuro);
+    color: var(--texto-claro);
+    line-height: 1;
+    padding: 8px 2px;
+    margin-right: 4px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    transition: 1s;
+}
+.perfil .social-links a:hover {
+    background: var(--texto-claro) ;
+    color: var(--borda-clara) ;
+    text-decoration: none;
+}
+/* manu nav desktop  */
+.nav-menu{
+    padding: 30px 0 0 0;
+}
+.nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-menu>ul>li{
+    position: relative;
+    white-space: nowrap;
+}
+.nav-menu a,
+.nav-menu a:focus{
+    display: flex;
+    align-items: center;
+    color: var(--texto-claro);
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.5s;
+    font-size: 15px;
+}
+.nav-menu a i,
+.nav-menu a:focus{
+   font-size: 24px;
+   padding-right: 12px;
+   color: var(--texto-claro);
+}
+.nav-menu a:hover,
+.nav-menu.active,
+.nav-menu .active:focus
+.nav-menu li:hover>a {
+    text-decoration: none;
+    color: var(--fundo-claro2);
+} 
+.nav-menu a:hover i,
+.nav-menu.active i,
+.nav-menu .active:focus i
+.nav-menu li:hover>a i{
+    color: var(--detalhes-escuros);
+
+}/* fim header */
+.mobile-nav-toggle{
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9999;
+    border: 0;
+    font-size: 25px;
+    transition: all 0.5s;
+    outline: none !important;
+    background: var(--detalhes-escuros);
+    color: var(--fundo-claro);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    cursor: ;
+}
+.mobile-nav-active #header{
+    overflow: hidden;
+} 
+.mobile-nav-active #header{
+    left: 0;
 }
