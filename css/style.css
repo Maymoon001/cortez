@@ -2,24 +2,24 @@
 /* variavel para cores */
 :root{
     --fundo-menu-lateral: #6e3a80;
-    --fundo-claro: #ba64b6;
-    --fundo-claro2: #d21dc9;
+    --fundo-claro: #b764ba;
+    --fundo-claro2: #d59ef5;
 
     --borda-clara: #a953a5;
     --borda-escura: #863284;
 
     --texto-escuro: #4d0349;
-    --texto-claro: #dbc8d9;
-    --texto-hover: #b717b4;
+    --texto-claro: #cb89e7;
+    --texto-hover: #8a17b7;
 
-    --detalhes-claros:#974395;
-    --detalhes-escuros:#451644;
+    --detalhes-claros:#772e8d;
+    --detalhes-escuros:#3d1645;
 }
 /* Mobile Menu */
 
 /* CSS Principal */
-body {
-    font-family: "playfair" sans-serif;
+body { 
+    font-family: "Italic" sans-serif;
     color: var(--texto-escuro);
     background: var(--fundo-claro);
 }
@@ -32,7 +32,7 @@ a:hover {
     text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', italic, serif;
 }
 /* cabeçalho */
 #header {
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     font-weight:600;
     text-align: center ;
-    font-family:"Playfair" sans-serif;
+    font-family:"italic" sans-serif;
 }
 .perfil .social-links a {
     font-size: 20px;
@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--detalhes-claros);
     margin-bottom:50px ;
     font-size: 26px;
-    font-family: "Playfair" sans-serif;
+    font-family: "Italic" sans-serif;
 }
 #hero p span {
     color: var(--texto-escuro);
@@ -225,4 +225,94 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 30px;
     line-height: 36px;    
     }
+    #hero p {
+        font-size: 24px;
+    }
+}
+/* CSS Geral */
+section{
+    padding: 60px 0;
+    overflow: hidden;
+}
+.section-bg { /* bg background */
+    background: var(--detalhes-escuros);
+}
+.section-title {
+    padding-bottom:30px ;
+}
+.section-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: var(--detalhes-escuros);
+}
+.section-title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--detalhes-escuros);
+}
+.section-title p {
+    margin-bottom: 0;
+}
+/* Sobre */
+.sobre .content h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--detalhes-escuros);
+}
+.sobre .container ul {
+    list-style: none;
+    padding: 0;
+
+}
+.sobre .container ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.sobre .container ul strong {
+    margin-right: 15px;
+}
+.sobre .container ul i {
+    font-size: 22px;
+    margin-right: 10px;
+    color: var(--detalhes-claros);
+    line-height: 0;
+}
+/* Conquistas */
+.conquistas{
+    padding-bottom: 30px;
+}
+.conquistas .count-box {
+    padding: 30px;
+    width: 100%;
+}
+.conquistas .count-box i {
+    display: block;
+    font-size: 45px;
+    color: var(--detalhes-claros);
+    float: left;
+    line-height: 0;
+}
+.conquistas .count-box span {
+    font-size: 50px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: var(--fundo-menu-lateral);
+    margin-left: 60px;
+}
+.conquistas .count-box p{
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: 'Times New Roman', italic , serif;
+    font-size: 16px;
+    color: var(--texto-escuro);
+}
+.conquistas .count-box i:hover{
+    color: var(--detalhes-claros);
 }
