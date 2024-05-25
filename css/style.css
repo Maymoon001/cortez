@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:wght@400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 /* variavel para cores */
 :root{
-    --fundo-menu-lateral: #752274;
+    --fundo-menu-lateral: #6e3a80;
     --fundo-claro: #ba64b6;
     --fundo-claro2: #d21dc9;
 
@@ -81,6 +81,30 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--borda-clara) ;
     text-decoration: none;
 }
+/* principal */
+#main{
+    margin-left: 300px;
+}
+.container,
+.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+@media(max-width: 1199px) {
+    #header {
+        left: -300px;
+    }
+    #main {
+        margin-left: 0;
+    }
+    .container,
+    .container-fluid{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+
 /* manu nav desktop  */
 .nav-menu{
     padding: 30px 0 0 0;
@@ -144,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0;
     cursor:pointer ;
 }
-.mobile-nav-active #header{
+.mobile-nav-active {
     overflow: hidden;
 } 
 .mobile-nav-active #header{
@@ -154,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/hero-bg/fundo.jpg") top center ;/* img do css */
+    background: url("../img/hero-bg/fundo3.jfif") top center ;/* img do css */
     background-size:cover ;
 }
 #hero::before {
@@ -190,4 +214,15 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 4px;
     letter-spacing: 1px;
     border-bottom: 3px solid var(--detalhes-claros);
+}
+@media (min-width:1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+@media (max-width: 768px){
+    #hero h1 {
+    font-size: 30px;
+    line-height: 36px;    
+    }
 }
