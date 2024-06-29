@@ -606,20 +606,23 @@ section{
 .depoimentos .swiper-pagination .swiper-pagination-bullet-active{
     background: rgb(74, 36, 85);
 }
-/* contato //  forms */
+/* Contato // Forms */
+.contato {
+    padding-bottom: 130px;
+}
 .contato .info {
-    padding: 30px ;
-    background: var(--detalhes-escuros);
-    width:100% ;
-    box-shadow: 0 0 24px 0 rgb(95, 9, 95);
+    padding: 30px;
+    background: var(--fundo-claro);
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(219, 215, 215, 0.495);
 }
 .contato .info i {
-    font-size: 20px;
-    color:var(--texto-escuro) ;
+    font-size: 22px;
+    color: var(--texto-claro);
+    background: var(--texto-menu);
     float: left;
     width: 44px;
     height: 44px;
-    background:var(--fundo-claro);
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -627,40 +630,40 @@ section{
     transition: all 0.3s ease-in-out;
 }
 .contato .info h4 {
-    color: #cb89e7;
+    color: var(--texto-menu);
     padding-left: 60px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .contato .info p {
-    color: var(--texto-claro);
+    color: var(--fundo-menu-lateral);
     font-size: 16px;
     padding: 0 0 10px 60px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
-.contato .info p:hover .fone {
-    color: var(--fundo-claro);
+.contato .info .fone p:hover {
+    color: red;
 }
-/* forms */
-.contato .email-form{
-    padding: 30px ;
-    background: var(--detalhes-escuros);
-    width:100% ;
-    box-shadow: 0 0 24px 0 rgb(95, 9, 95);
+/*Forms */
+.contato .email-form {
+    padding: 30px;
+    background: var(--fundo-claro);
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(219, 215, 215, 0.495);
 }
 .contato .email-form .form-group {
-    padding-bottom: 15px; 
+    padding-bottom: 15px;
 }
 .contato .email-form label {
-    color: var(--texto-claro);
+    color: var(--texto-menu);
     margin-bottom: 2px;
     font-size: 18px;
 }
 .contato .email-form input,
 .contato .email-form textarea {
-   /*  border-radius:0 ; */
-    box-shadow: none; /* remover sombra */
+    /* border-radius: 0; */
+    box-shadow: none; /*remover sombra*/
     font-size: 16px;
 }
 .contato .email-form input {
@@ -669,18 +672,19 @@ section{
 .contato .email-form textarea {
     padding: 10px 15px;
 }
-.contato .email-form button[type=submit]{
-    background: var(--fundo-claro);
+.contato .email-form button[type=submit] {
+    background: var(--aspas);
     color: var(--fundo-menu-lateral);
     border: 0;
     border-radius: 4px;
     padding: 10px 24px;
     /* width: 70px;
-    height: 30px ; */
+    height: 30px; */
+    /* font-size: 18px; */
     transition: 0.4s;
 }
-.contato .email-form button[type=submit]:hover{
-    background: var(--detalhes-claros);
+.contato .email-form button[type=submit]:hover {
+    background: var(--fundo-escuro);
 }
 /* Back-to-top // Voltar ao Topo */
 .back-to-top {
@@ -715,12 +719,12 @@ section{
 #footer {
     padding: 30px;
     background: var(--fundo-menu-lateral);
-    color: var(--fundo-claro);
+    color: var(--aspas);
     font-size: 16px;
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 0;
+    width: 300px;
     z-index: 9999;
 }
 #footer .copyright {
@@ -730,10 +734,10 @@ section{
     padding-top: 5px;
     text-align: center;
     font-size: 16px;
-    color: var(--fundo-claro);
+    color: var(--aspas);
 }
 #footer .creditos a {
-    color: var(--fundo-claro2);
+    color: var(--detalhes-escuro);
 }
 @media (max-width: 1199px) {
     #footer {
@@ -743,7 +747,49 @@ section{
     }
 }
 
-
 /* breadcrumbs */
-
+.breadcrumbs {
+    padding: 20px 0;
+    background: var(--texto-hover) ;
+}
+.breadcrumbs h2{
+    color: var(--fundo-claro2);
+    font-size: 26px;
+    font-weight: 300;
+}
+.breadcrumbs ol {
+    color: var(--fundo-claro);
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+.breadcrumbs ol li {
+    padding-left: 10px;
+}
+.breadcrumbs ol li a {
+    color: var(--borda-clara);
+}
+.breadcrumbs ol li a:hover {
+    color: red;
+}
+.breadcrumbs ol li+li::before{
+    content: ">";
+    display: inline-block;
+    padding-right: 10px;
+    color: var(--fundo-claro2);
+}
+@media(max-width: 768px) {
+    .breadcrumbs .d-flex{
+        display: block !important;
+    }
+    .breadcrumbs ol{
+        display: block;
+    }
+    .breadcrumbs ol li {
+        display: inline-block;
+    }
+}
 /* voltar aqui */
